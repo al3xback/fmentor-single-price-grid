@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mixins' as mix;
+
+.card {
+	display: grid;
+	margin: func.em(40) 0;
+	background-color: var.$color-white;
+	@include mix.border-radius(8px);
+	@include mix.box-shadow(
+		0 func.em(16, var.$font-size-primary)
+			func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04)
+	);
+	overflow: hidden;
+}
+
+.card__block {
+	display: grid;
+	padding: func.em(26, var.$font-size-primary)
+		func.em(24, var.$font-size-primary);
+}
+
+.card__title {
+	margin-bottom: func.em(20, 20);
+}
+
+.card__mark {
+	margin-bottom: func.em(16, 15);
+}
+
+.card__group {
+	display: grid;
+}
+
+.card__block--monthly-subsription,
+.card__block--why-us {
+	color: var.$color-light-gray;
+}
+
+.card__block--monthly-subsription {
+	background-color: var.$color-cyan;
+}
+
+.card__block--why-us {
+	background-color: var.$color-cyan-light;
+}
+
+.card__subtitle {
+	margin-bottom: func.em(18, 18);
+	color: inherit;
+}
+
+.card__price {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-self: start;
+	align-items: center;
+	margin-top: func.em(-6, var.$font-size-primary);
+	font-size: func.em(16, var.$font-size-primary);
+}
+
+.card__price .num {
+	margin-right: func.em(12, 31);
+	font-size: func.em(31, 16);
+	font-weight: var.$font-weight-700;
+}
+
+.card__price .label {
+	color: var.$color-lighter-gray;
+}
+
+.card__block--monthly-subsription .card__desc {
+	margin-bottom: func.em(28, 15);
+	font-size: func.em(15, var.$font-size-primary);
+}
+
+.card__list {
+	display: grid;
+	grid-gap: func.em(3, var.$font-size-primary)
+}
+
+@media (min-width: 48em) {
+	.card {
+		max-width: func.em(640, var.$font-size-primary);
+	}
+
+	.card__block {
+		padding: func.em(38, var.$font-size-primary)
+			func.em(40, var.$font-size-primary);
+	}
+
+	.card__title {
+		font-size: func.em(24, var.$font-size-primary);
+	}
+
+	.card__mark {
+		font-size: func.em(18, var.$font-size-primary);
+	}
+
+	.card__group {
+		grid-template-columns: 1fr 1fr;
+	}
+}

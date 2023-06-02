@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+@use '../abstracts/mixins' as mix;
+
+.btn {
+	display: inline-block;
+	padding: func.em(12, var.$font-size-primary);
+	border: 1px solid transparent;
+	@include mix.user-select(none);
+	@include mix.border-radius(4px);
+	@include mix.box-shadow(0rem 0.5em 1.125em rgba(0, 0, 0, 0.2));
+	font-size: func.em(16, var.$font-size-primary);
+	text-align: center;
+	text-decoration: none;
+	@include mix.transition(all 0.4s);
+}
+
+.btn--primary {
+	background-color: var.$color-bright-yellow;
+	color: var.$color-white;
+	border-color: var.$color-bright-yellow;
+}
+
+.btn--primary:hover,
+.btn--primary:active {
+	background-color: var.$color-bright-yellow-dark;
+	color: var.$color-white;
+	border-color: var.$color-bright-yellow-dark;
+}
+
+.btn--link {
+	padding: 0;
+	@include mix.box-shadow(none);
+}
+
+.btn--full {
+	display: block;
+}

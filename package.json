@@ -1,0 +1,25 @@
+{
+	"name": "fmentor-single-price-grid",
+	"version": "1.0.0",
+	"description": "single price component project using display grid",
+	"main": "index.js",
+	"scripts": {
+		"dev": "sass --watch scss/main.scss css/main.css",
+		"build": "sass scss/main.scss css/main.css",
+		"lint": "prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/al3xback/fmentor-single-price-grid.git"
+	},
+	"author": "alex <al3xback@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/al3xback/fmentor-single-price-grid/issues"
+	},
+	"homepage": "https://github.com/al3xback/fmentor-single-price-grid#readme",
+	"devDependencies": {
+		"prettier": "^2.8.8",
+		"sass": "^1.62.1"
+	}
+}
