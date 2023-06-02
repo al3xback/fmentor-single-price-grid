@@ -76,7 +76,7 @@
 
 .card__list {
 	display: grid;
-	grid-gap: func.em(3, var.$font-size-primary)
+	grid-gap: func.em(3, var.$font-size-primary);
 }
 
 @media (min-width: 48em) {
