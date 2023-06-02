@@ -278,6 +278,7 @@ ol {
 
 @media (min-width: 48em) {
   .card {
+    width: 100%;
     max-width: 45.7142857143em;
   }
   .card__block {
