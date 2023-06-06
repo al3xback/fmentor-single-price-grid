@@ -4,7 +4,7 @@
 
 .card {
 	display: grid;
-	margin: func.em(40) 0;
+	margin: func.em(40, var.$font-size-primary) 0;
 	background-color: var.$color-white;
 	@include mix.border-radius(8px);
 	@include mix.box-shadow(

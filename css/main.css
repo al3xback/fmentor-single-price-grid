@@ -201,7 +201,7 @@ ol {
 
 .card {
   display: grid;
-  margin: 2.5em 0;
+  margin: 2.8571428571em 0;
   background-color: hsl(0, 0%, 100%);
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
