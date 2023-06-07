@@ -74,9 +74,13 @@
 	font-size: func.em(15, var.$font-size-primary);
 }
 
+.card__block .btn {
+	font-size: func.em(16, var.$font-size-primary);
+}
+
 .card__list {
 	display: grid;
-	grid-gap: func.em(3, var.$font-size-primary);
+	gap: func.em(3, var.$font-size-primary);
 }
 
 @media (min-width: 48em) {

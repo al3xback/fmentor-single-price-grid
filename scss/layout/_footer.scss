@@ -2,18 +2,12 @@
 @use '../abstracts/mixins' as mix;
 
 footer,
-footer > .container {
+footer .container {
 	display: grid;
 }
 
 footer {
 	padding: 1em 0;
-}
-
-footer > .container {
-	justify-items: center;
-}
-
-footer p {
-	font-size: 0.75em;
+	text-align: center;
+	font-size: 0.8em;
 }
