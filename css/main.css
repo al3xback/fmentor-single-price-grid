@@ -218,7 +218,7 @@ ol {
   padding: 1.8571428571em 1.7142857143em;
 }
 
-.card__title {
+h2.card__title {
   margin-bottom: 1em;
 }
 
@@ -243,7 +243,7 @@ ol {
   background-color: hsl(179, 47%, 52%);
 }
 
-.card__subtitle {
+h3.card__title {
   margin-bottom: 1em;
   color: inherit;
 }
@@ -288,7 +288,7 @@ ol {
   .card__block {
     padding: 2.7142857143em 2.8571428571em;
   }
-  .card__title {
+  h2.card__title {
     font-size: 1.7142857143em;
   }
   .card__mark {

@@ -20,7 +20,7 @@
 		func.em(24, var.$font-size-primary);
 }
 
-.card__title {
+h2.card__title {
 	margin-bottom: func.em(20, 20);
 }
 
@@ -45,7 +45,7 @@
 	background-color: var.$color-cyan-light;
 }
 
-.card__subtitle {
+h3.card__title {
 	margin-bottom: func.em(18, 18);
 	color: inherit;
 }
@@ -93,7 +93,7 @@
 			func.em(40, var.$font-size-primary);
 	}
 
-	.card__title {
+	h2.card__title {
 		font-size: func.em(24, var.$font-size-primary);
 	}
 
