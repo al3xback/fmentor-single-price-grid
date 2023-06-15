@@ -125,7 +125,6 @@ strong {
 }
 
 mark {
-  display: block;
   background-color: transparent;
   font-size: 1.0714285714em;
   font-weight: 700;
