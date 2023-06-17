@@ -1,7 +1,7 @@
 {
 	"name": "fmentor-single-price-grid",
 	"version": "1.0.0",
-	"description": "single price component project using display grid",
+	"description": "single price grid component using display grid",
 	"main": "index.js",
 	"scripts": {
 		"dev": "sass --watch scss/main.scss css/main.css",
