@@ -6,11 +6,9 @@
 	display: grid;
 	margin: func.em(40, var.$font-size-primary) 0;
 	background-color: var.$color-white;
-	@include mix.border-radius(8px);
-	@include mix.box-shadow(
-		0 func.em(16, var.$font-size-primary)
-			func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04)
-	);
+	border-radius: 8px;
+	box-shadow: 0 func.em(16, var.$font-size-primary)
+		func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04);
 	overflow: hidden;
 }
 
