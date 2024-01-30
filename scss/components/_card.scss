@@ -54,8 +54,7 @@ h3.card__title {
 
 .card__price {
 	display: grid;
-	grid-template-columns: auto auto;
-	justify-self: start;
+	grid-template-columns: auto 1fr;
 	align-items: center;
 	margin-top: func.em(-6, var.$font-size-primary);
 	font-size: func.em(16, var.$font-size-primary);
