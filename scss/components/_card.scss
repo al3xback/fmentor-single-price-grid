@@ -88,6 +88,7 @@ h3.card__title {
 
 @media (min-width: 48em) {
 	.card {
+		width: 100%;
 		max-width: func.em(640, var.$font-size-primary);
 	}
 
